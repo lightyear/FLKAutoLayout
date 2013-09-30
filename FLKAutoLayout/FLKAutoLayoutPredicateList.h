@@ -14,7 +14,7 @@ typedef NSLayoutConstraint* (^predicateBlock)(FLKAutoLayoutPredicate predicate);
 
 @interface FLKAutoLayoutPredicateList : NSObject
 
-+ (id)predicateListFromString:(NSString*)string;
++ (instancetype)predicateListFromString:(NSString*)string;
 - (NSArray*)iteratePredicatesUsingBlock:(predicateBlock)block;
 
 @end
